@@ -1,23 +1,27 @@
 name: Generate Snake
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 */6 * * *"  # Roda a cada 6 horas
+  workflow_dispatch:  # Permite rodar manual
+
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4  # Versão atualizada
       - name: Generate snake
-        uses: Platane/snk@v3
+        uses: Platane/snk@v3  # Versão atualizada
         with:
-          github_user_name: ezequias
-      - uses: crazy-max/ghaction-github-pages@v4
+          github_user_name: ezequias  # Seu user
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v4  # Versão atualizada
         with:
           target_branch: output
           build_dir: dist
-      - name: Push
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Push to output branch
+        uses: peaceiris/actions-gh-pages@v4  # Versão atualizada
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
