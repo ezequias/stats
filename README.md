@@ -2,6 +2,6 @@
 Minhas estatísticas no GitHub
 
 <p align="center">
-  <img height="300" width="900" src="https://github.pumbas.net/api/contributions/ezequias?bgColour=0d1117&colour=58a6ff" alt="Gráfico de quadradinhos de contribuições do Ezequias (estilo GitHub oficial)" />
-  <br><small>📈 Grid clássico do GitHub: atividade total de todos os repositórios (anos recentes). Contribua em públicos pra encher de azul/verde! Atualiza automaticamente. 🚀</small>
+  <img height="300" src="https://www.gitch.art/chart/ezequias?theme=dark&height=300&columns=52" alt="Gráfico de quadradinhos de contribuições do Ezequias (estilo GitHub oficial)" />
+  <br><small>📈 Grid clássico do GitHub: 1 ano de atividade total (todos os repositórios somados). Contribua em públicos pra encher de verde/roxo/azul! Atualiza automaticamente. 🚀</small>
 </p>
